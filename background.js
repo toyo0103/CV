@@ -19,3 +19,11 @@ chrome.runtime.onInstalled.addListener(function() {
     }]);
   });
 });
+
+chrome.contextMenus.create({
+  title: "first",
+  contexts: ["selection"],
+  onclick: function() {
+    alert('first');
+  }
+});

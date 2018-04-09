@@ -2,7 +2,7 @@
   "name": "CV",
   "version": "1.0",
   "description": "打造FB商品王國!",
-  "permissions":["activeTab","declarativeContent","storage"],
+  "permissions":["activeTab","declarativeContent","storage","contextMenus"],
   "background":{
     "scripts":["background.js"],
     "persistent":false

@@ -3,15 +3,17 @@ $(function(){
     $.each(rows,function(key,row){
         let boxs = $(row).find('._e3il2');
         
-        $.each(boxs,function(key,box){
-            console.log(box);
-            // $(box).on('click',function(){
-            //     console.log('click');
-            //     // console.log($('._622au._5lms4._4kplh').find('._4rbun')[0].find('img')[0]);
-            //     // $('._dcj9f').click();
-            //     // console.log('clickEnd');
-            // });
-            console.log('end');
+        $(boxs).click(function(){
+            var img = $(this).find('img')[0];
+            console.log($(img).prop('alt'));
+        });
+
+        $(boxs).each(function(){
+            //$(this).click();
+        });
+
+        $(boxs).promise().done(function(){
+            console.log('123');
         });
     });
 })
